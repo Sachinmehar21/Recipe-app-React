@@ -39,45 +39,48 @@ const Update = () => {
     };
 
     return recipe ? (
-        <form onSubmit={UpdateHandler} className="w-[70%] m-auto  ">
-            <h1 className="text-7xl mt-5 font-extrabold text-green-600 mb-[5%]">
-                Update <br /> Existing Recipe
+        <form onSubmit={UpdateHandler} className="max-w-screen-md mx-auto px-4">
+            <h1 className="text-4xl sm:text-7xl mt-5 font-extrabold text-green-600 mb-8 text-center">
+                Update Existing Recipe
             </h1>
             <input
                 onChange={(e) => setimage(e.target.value)}
                 value={image}
                 type="url"
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
+                className="w-full border rounded-md px-4 py-3 text-lg mb-4"
                 placeholder="Recipe Image URL"
             />
             <input
                 onChange={(e) => settitle(e.target.value)}
                 value={title}
                 type="text"
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
+                className="w-full border rounded-md px-4 py-3 text-lg mb-4"
                 placeholder="Recipe Name"
             />
             <textarea
                 onChange={(e) => setdescription(e.target.value)}
                 value={description}
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
-                placeholder="recipe description..."
+                className="w-full border rounded-md px-4 py-3 text-lg mb-4"
+                placeholder="Recipe Description"
+                rows="5"
             ></textarea>
             <textarea
                 onChange={(e) => setingredients(e.target.value)}
                 value={ingredients}
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
-                placeholder="recipe ingredients -> 'use comma to seperate ingredients'..."
+                className="w-full border rounded-md px-4 py-3 text-lg mb-4"
+                placeholder="Recipe Ingredients (separated by commas)"
+                rows="5"
             ></textarea>
             <textarea
                 onChange={(e) => setinstructions(e.target.value)}
                 value={instructions}
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
-                placeholder="recipe instructions -> 'use comma to seperate instructions'..."
+                className="w-full border rounded-md px-4 py-3 text-lg mb-4"
+                placeholder="Recipe Instructions (separated by commas)"
+                rows="5"
             ></textarea>
             <div className="w-full text-right">
-                <button className="rounded-md text-xl bg-green-600 text-white py-2 px-5 hover:bg-green-700 duration-200">
-                    Re-Publish Recipe &nbsp; &#8594;
+                <button className="rounded-md text-lg bg-green-600 text-white py-2 px-6 hover:bg-green-700 duration-200">
+                    Update Recipe &nbsp; &#8594;
                 </button>
             </div>
         </form>

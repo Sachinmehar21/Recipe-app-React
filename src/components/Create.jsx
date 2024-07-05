@@ -18,6 +18,13 @@ const Create = () => {
 
     const SubmitHandler = (e) => {
         e.preventDefault();
+
+        // Basic validation to check if required fields are empty
+        if (!image || !title || !description || !ingredients || !instructions) {
+            toast.error("Please fill in all fields.");
+            return;
+        }
+
         const newRecipe = {
             id: nanoid(),
             image,
@@ -35,45 +42,49 @@ const Create = () => {
         toast.success("Recipe Created Successfully!");
         navigate("/recipes");
     };
+
     return (
-        <form onSubmit={SubmitHandler} className="w-[70%] m-auto  pb-5">
-            <h1 className="text-7xl mt-5 font-extrabold text-green-600 mb-[5%]">
-                Create <br /> New Recipe
+        <form onSubmit={SubmitHandler} className="max-w-lg mx-auto mt-8 p-4 bg-white shadow-lg rounded-lg">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-green-600 text-center mb-6">
+                Create New Recipe
             </h1>
             <input
                 onChange={(e) => setimage(e.target.value)}
                 value={image}
                 type="url"
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
+                className="w-full border rounded-md px-4 py-2 text-lg mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
                 placeholder="Recipe Image URL"
             />
             <input
                 onChange={(e) => settitle(e.target.value)}
                 value={title}
                 type="text"
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
+                className="w-full border rounded-md px-4 py-2 text-lg mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
                 placeholder="Recipe Name"
             />
             <textarea
                 onChange={(e) => setdescription(e.target.value)}
                 value={description}
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
-                placeholder="recipe description..."
+                className="w-full border rounded-md px-4 py-2 text-lg mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+                placeholder="Recipe Description..."
+                rows="4"
             ></textarea>
             <textarea
                 onChange={(e) => setingredients(e.target.value)}
                 value={ingredients}
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
-                placeholder="recipe ingredients -> 'use comma to seperate ingredients'..."
+                className="w-full border rounded-md px-4 py-2 text-lg mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+                placeholder="Recipe Ingredients (Separate with commas)..."
+                rows="4"
             ></textarea>
             <textarea
                 onChange={(e) => setinstructions(e.target.value)}
                 value={instructions}
-                className="w-full border rounded-md px-6 py-3 text-lg mb-5"
-                placeholder="recipe instructions -> 'use comma to seperate instructions'..."
+                className="w-full border rounded-md px-4 py-2 text-lg mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+                placeholder="Recipe Instructions (Separate with commas)..."
+                rows="4"
             ></textarea>
-            <div className="w-full text-right">
-                <button className="rounded-md text-xl bg-green-600 text-white py-2 px-5 hover:bg-green-700 duration-200">
+            <div className="flex justify-end">
+                <button className="rounded-md text-lg bg-green-600 text-white py-2 px-5 hover:bg-green-700 duration-200">
                     Publish Recipe &nbsp; &#8594;
                 </button>
             </div>
