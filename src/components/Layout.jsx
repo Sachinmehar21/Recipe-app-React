@@ -6,7 +6,7 @@ const Layout = () => {
     return (
         <>
             <Home />
-            <Recipes />
+            <Recipes class="mt-10" />
             <Footer />
         </>
     );
