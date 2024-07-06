@@ -1,5 +1,5 @@
 # Recipe app (React)
-
+- **hosted on**: https://recipe-app-react-sachinmehar21s-projects.vercel.app/
 Recipe Manager is a feature-rich, responsive web application built using React and Redux, designed to help users manage and share their favorite recipes effortlessly. Whether you're a cooking enthusiast, a food blogger, or just someone who loves trying out new dishes, this app provides a seamless way to organize, update, and showcase your culinary creations.
 
 # Table of Content 
@@ -12,7 +12,7 @@ Recipe Manager is a feature-rich, responsive web application built using React a
  • Contact
 
 
-## Installation
+# Installation
 
 1. Clone the repo
 
@@ -31,7 +31,7 @@ Recipe Manager is a feature-rich, responsive web application built using React a
 ```
 
 
-## Usage
+# Usage
 
 1. Start the development server:
 ``` 
@@ -48,7 +48,7 @@ Delete Recipes: Remove recipes that you no longer wish to keep.
 - Responsive Design: Enjoy a consistent and visually appealing experience across desktop, tablet, and mobile devices.
 - Interactive UI: Navigate recipes with ease using intuitive controls and a clean, modern design.
 
-## Contributing
+# Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.\
 
@@ -57,7 +57,8 @@ Contributions are what make the open-source community such an amazing place to l
 3. Commit your Changes (git commit -m 'Add some AmazingFeature')
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
-## MIT License
+
+# MIT License
 
 Copyright (c) 2024 Sachin Mehar
 
@@ -80,7 +81,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## Contact
+# Contact
 
 Sachin Mehar - Sachinmehar21@gmail.com
 
