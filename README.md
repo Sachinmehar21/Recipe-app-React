@@ -35,7 +35,7 @@ Recipe Manager is a feature-rich, responsive web application built using React a
 
 1. Start the development server:
 ``` 
-npx nodemon
+npm run dev
 ```
 2. Open your browser and navigate to http://localhost:3000 to see the app in action.
  
