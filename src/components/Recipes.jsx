@@ -8,20 +8,19 @@ const Recipes = () => {
 
     return (
         <div className="px-4 md:px-8 lg:px-16">
-            <h1 className="text-green-600 text-5xl font-extrabold text-center mt-10" style={{ textDecoration: 'underline' }}>
+            <h1 className="text-green-600 text-5xl font-extrabold text-center mt-10 pb-4" style={{ textDecoration: 'underline' }}>
     OUR RECIPES
 </h1>
 
-            <p className="text-center text-zinc-400 mt-2 mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                aperiam?
+            <p className="text-center text-zinc-400 mt-2 text-xl">
+                List of recipes by users ↓
             </p>
             <div className="recipe-cards flex flex-wrap justify-center">
                 {recipes.length > 0 ? (
                     recipes.map((r) => <Card key={r.id} recipe={r} />)
                 ) : (
-                    <h1 className="w-full text-green-600 text-3xl font-extrabold text-center mt-10 pb-5">
-                    No Recipe Found
+                    <h1 className="w-full text-orange-500 text-4xl font-extrabold text-center mt-6 pb-5">
+                    No Recipe Found!
                 </h1>
                 
                 )}

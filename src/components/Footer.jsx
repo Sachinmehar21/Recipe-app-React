@@ -13,8 +13,7 @@ const Footer = () => {
                         <div className="p-3">
                             <h1 className="text-lg font-bold mb-1">Quality Food</h1>
                             <p className="text-sm text-gray-600">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                                nesciunt sit in? Consectetur, illum ipsum!
+                            Ditch takeout! Discover high-quality recipes in our app. Simple steps, fresh flavors, delicious food - all at your fingertips.
                             </p>
                         </div>
                     </div>
@@ -26,8 +25,7 @@ const Footer = () => {
                         <div className="p-3">
                             <h1 className="text-lg font-bold mb-1">Cook like a Chef</h1>
                             <p className="text-sm text-gray-600">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                                nesciunt sit in? Consectetur, illum ipsum!
+                            Sizzle with confidence! Sear, season, taste as you go. Fresh, high-quality ingredients + technique = restaurant-worthy meals.
                             </p>
                         </div>
                     </div>
@@ -39,8 +37,7 @@ const Footer = () => {
                         <div className="p-3">
                             <h1 className="text-lg font-bold mb-1">Ingredients</h1>
                             <p className="text-sm text-gray-600">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                                nesciunt sit in? Consectetur, illum ipsum!
+                            Transform your pantry! Explore surprising combos, elevate leftovers, unlock chef-worthy dishes with everyday ingredients.
                             </p>
                         </div>
                     </div>
@@ -52,8 +49,7 @@ const Footer = () => {
                         <div className="p-3">
                             <h1 className="text-lg font-bold mb-1">Easy Recipe</h1>
                             <p className="text-sm text-gray-600">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                                nesciunt sit in? Consectetur, illum ipsum!
+                            Whip up magic in minutes! Explore our app for fuss-free recipes using ingredients you already have. Dinner solved, delicious guaranteed.
                             </p>
                         </div>
                     </div>
