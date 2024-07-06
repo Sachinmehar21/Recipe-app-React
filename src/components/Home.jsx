@@ -17,7 +17,7 @@ const Home = () => {
                     </button>
                 </Link>
             </div>
-            <div className="md:w-1/2 px-4 md:px-0">
+            <div className="md:w-1/2 px-4 md:px-0 mb-8">
                 <img
                     className="w-full h-auto"
                     src="https://www.pngall.com/wp-content/uploads/8/Cooking-Recipe-PNG-Clipart.png"
