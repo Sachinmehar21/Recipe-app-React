@@ -7,7 +7,7 @@ const Recipes = () => {
     const { pathname } = useLocation();
 
     return (
-        <div className="px-4 md:px-8 lg:px-16">
+        <div className="px-4 md:px-8 lg:px-16 mt-10">
             <h1 className="text-green-600 text-5xl font-extrabold text-center mt-10 pb-4" style={{ textDecoration: 'underline' }}>
     OUR RECIPES
 </h1>
