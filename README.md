@@ -22,7 +22,7 @@ Recipe Manager is a feature-rich, responsive web application built using React a
 2. Navigate to the project directory:
 
 ```
-  cd instaspams
+  cd Recipe-app-React
 ```
 3. Install dependencies:
 
@@ -37,7 +37,7 @@ Recipe Manager is a feature-rich, responsive web application built using React a
 ``` 
 npm run dev
 ```
-2. Open your browser and navigate to http://localhost:3000 to see the app in action.
+2. Open your browser and navigate to http://localhost:5173 to see the app in action.
  
 # Features
 ## Intuitive Recipe Management
